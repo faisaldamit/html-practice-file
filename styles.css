@@ -1,8 +1,9 @@
 .avatar {
-  width: 120px;
+  width: auto;
   aspect-ratio: 1;
-  border-radius: 60px;
+  border-radius: 200px;
   border: 2px solid blue;
+  margin-block: 50px;
 }
 
 .avatar-container {
@@ -11,23 +12,54 @@
   margin-right: auto;
 }
 .container {
-  color: beige;
-  background-color: teal;
-  padding: 20px 50px;
-  text-align: center;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .input {
   width: 100%;
   margin: 10px 0px 10px 0px;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2%;  
+  text-align: left;
+  padding: 1.2%;
 }
 .button {
-  padding: 5px 10px;
+  width: 107.7%;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
   text-transform: uppercase;
+  border-radius: 6px;
   font-weight: bold;
-  color: 
-  #d0e;
+  color: white;
+  background-color: #04AA6D;
+}
+
+
+.cancelBtn {
+  width: auto;
+  padding: 10px 15px;
+  background-color: #f44336;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media and (max-width: 300px)
+ {
+  span.psw {
+    display: inline-block;
+    float: none;
+  }
+  .cancelBtn {
+    width: 100%;
+  }
 }
